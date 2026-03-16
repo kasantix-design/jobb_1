@@ -26,10 +26,100 @@
     <!-- Plassholder for navigasjon -->
     <div data-include="detaljer/nav.html"></div>
 
-    <main>
-        <h1>Tilrettelagt arbeid</h1>
-        <p>Her kommer sidens innhold.…</p>
-    </main>
+   <main id="main">
+    <div class="container">
+
+        <noscript>
+            <div class="no-script-message">
+                <p class="no-script-message__text">
+                    JavaScript må være aktivert for å bruke all funksjonalitet på nettstedet.
+                </p>
+            </div>
+        </noscript>
+
+        <article class="article">
+
+            <!-- HEADER / TITTEL -->
+            <div class="article__header">
+                <h1 class="article__heading">Tilrettelagt arbeid</h1>
+                <p class="article__desktop-intro ingress">
+                    For deg som ønsker å komme deg ut i arbeidslivet eller i en utdanning.
+                </p>
+            </div>
+
+            <!-- BILDESEKSJON -->
+            <div class="article__image">
+                <picture class="article__picture">
+                    <!-- Desktop -->
+                    <source 
+                        srcset="bilder/ta-illustrasjon.webp" 
+                        media="(min-width: 768px)">
+                    <!-- Tablet -->
+                    <source 
+                        srcset="bilder/ta-illustrasjon.webp" 
+                        media="(min-width: 414px)">
+                    <!-- Mobil fallback -->
+                    <img 
+                        src="bilder/ta-illustrasjon.webp" 
+                        alt="Illustrasjon for tilrettelagt arbeid" 
+                        class="article__img">
+                </picture>
+            </div>
+
+            <!-- INTROTEKST MOBIL -->
+            <div class="article__mobile-intro ingress">
+                For deg som ønsker å komme deg ut i arbeidslivet eller i en utdanning.
+            </div>
+
+            <!-- HOVEDINNHOLD -->
+            <div class="article__content">
+                <div class="editorial article__main-body">
+
+                    <p>
+                        Det er mange årsaker til at mennesker faller utenfor arbeidslivet. 
+                        Formålet med tilrettelagt arbeid (TA) er å bistå deg med å finne din plass i arbeidslivet. 
+                        Vi tror på at vi vokser og utvikler oss om vi får jobbe med noe vi selv er motivert for 
+                        og har ressurser til. Vår jobb er å matche dine egenskaper med riktig arbeidsgiver.
+                    </p>
+
+                    <h2>
+                        Har du uføretrygd, men likevel et ønske om å være i arbeid eller utdanning?
+                        Vi i Fretex Jobb bistår deg på veien mot din drømmejobb eller utdanning.
+                    </h2>
+
+                    <p>
+                        På veien mot jobb vil en jobbkonsulent bistå deg med å kartlegge ressursene dine, 
+                        og å se på de behovene du har for tilrettelegging som kan gi mestring og muligheter 
+                        i arbeidslivet. Vi bruker også god tid på å kartlegge arbeidsgivere, slik at du kan få 
+                        muligheten til å teste ut ulike jobber.
+                    </p>
+
+                    <p>
+                        Du er den viktigste brikken på veien – egeninnsats og vilje til å utfordre deg selv 
+                        er det viktigste bidraget mot jobb. Hva er din drømmejobb?
+                    </p>
+
+                    <p>
+                        <img src="bilder/ta-faktaboks-copy.webp" alt="Faktaboks om tilrettelagt arbeid">
+                    </p>
+
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+    <!-- TIL TOPPEN KNAPP -->
+    <div class="elevator-button-wrapper">
+        <a href="#main" class="elevator-button" id="elevator-button">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.35 1.4L15.85 8.48H0.30V9.37H15.85L9.35 16.44L9.93 17.06L17.46 8.92L9.93 0.79L9.35 1.4Z" fill="black" />
+            </svg>
+            <span class="sr-only">Til toppen</span>
+        </a>
+    </div>
+</main>
 
     <!-- Plassholder for footer -->
     <div data-include="detaljer/footer.html"></div>
