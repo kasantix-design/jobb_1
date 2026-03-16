@@ -138,70 +138,84 @@ img {
 }
 
 /* ===========================
-   FOOTER (din footer.html)
-   =========================== */
+   FRETEXT FOOTER
+=========================== */
 
 .fretex-footer {
     background-color: #E4002B;
-    color: #ffffff;
-    padding: 50px 0 30px;
-    margin-top: 80px;
+    border-radius: 30px;
+    padding: 50px 0;
+    color: white;
+    width: min(1200px, 95%);
+    margin: 60px auto;
+    box-shadow: 0 0 0 12px #f0f0f0; /* grå ramme utenfor radius */
 }
 
-.footer-container {
-    width: min(1200px, 90%);
+.footer-inner {
+    width: min(1100px, 90%);
     margin: auto;
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 50px;
 }
 
-.footer-left {
-    max-width: 400px;
+.footer-logo {
+    width: 160px;
+    margin-bottom: 20px;
 }
 
 .footer-vision {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.footer-contact h3 {
-    margin-bottom: 10px;
     font-size: 1.2rem;
+    font-weight: 600;
+    margin: 20px 0;
 }
 
-.footer-contact a {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-.footer-links ul {
-    list-style: none;
-}
-
-.footer-links li {
+.footer-contact h3,
+.footer-heading {
+    font-size: 1.3rem;
     margin-bottom: 10px;
 }
 
-.footer-links a {
-    color: #ffffff;
-    font-size: 1.1rem;
+.footer-contact p {
+    font-size: 1rem;
+}
+
+.footer-tiltak-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-tiltak-list li {
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-tiltak-list a {
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
-.footer-links a:hover {
+.footer-tiltak-list a:hover {
     text-decoration: underline;
 }
 
-.footer-bottom {
-    text-align: center;
-    margin-top: 40px;
-    opacity: 0.85;
-    font-size: 0.9rem;
+.footer-arrow path {
+    stroke: white;
 }
 
+/* Responsiv */
+@media (max-width: 800px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-tiltak-list li {
+        justify-content: center;
+    }
+}
 /* ===========================
    RESPONSIVITET
    =========================== */
