@@ -218,24 +218,15 @@ fill:white;
    FOOTER
    =========================== */
 
+
+
 .fretex-footer{
-
-background:#d62828;
-
-color:white;
-
-border-radius:35px;
-
-padding:60px 40px;
-
-width:95%;
-
-margin:80px auto;
-
-box-shadow:
-0 0 0 12px #f0f0f0,
-0 15px 40px rgba(0,0,0,0.15);
-
+    background:#d62828;
+    color:white;
+    border-radius:35px;
+    padding:60px 40px;
+    width:95%;
+    margin:80px auto;
 }
 
 .footer-inner{
