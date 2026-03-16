@@ -1,18 +1,27 @@
-<svg version="1.1" id="Layer_1" 
-     xmlns="http://www.w3.org/2000/svg" 
-     xmlns:xlink="http://www.w3.org/1999/xlink" 
-     x="0px" y="0px" 
-     viewBox="0 0 260 60.4" 
-     style="enable-background:new 0 0 260 60.4;" 
-     xml:space="preserve">
-     
-     <style type="text/css">
-         .st0{fill:#E4002B;}   <!-- Fretex-rød -->
-         .st1{fill:#FFFFFF;}   <!-- Hvitt -->
-     </style>
+<header class="default-header" id="pageHeader">
+  <div class="container">
 
-     <!-- Her kommer hele logoens geometri -->
-     <g>…</g>
-     <g>…</g>
+    <a class="default-header__logo" href="/" aria-label="Fretex - Forsiden">
 
-</svg>
+      <svg viewBox="0 0 260 60.4" xmlns="http://www.w3.org/2000/svg" class="fretex-logo">
+
+        <style>
+          .st0 { fill:#E4002B; }
+          .st1 { fill:#FFFFFF; }
+        </style>
+
+        <!-- Her ligger alle path/g-elementene fra logoen -->
+        <!-- Eksempel: -->
+        <!--
+        <g>
+          <path class="st0" d="..."/>
+          <path class="st1" d="..."/>
+        </g>
+        -->
+
+      </svg>
+
+    </a>
+
+  </div>
+</header>
