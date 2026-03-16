@@ -163,16 +163,13 @@ transform:translateY(-5px);
 .tiltak-item img{
 
 width:100%;
-
 height:260px;
 
 object-fit:cover;
+object-position:center;
 
 border-radius:16px;
-
 border:4px solid #E4002B;
-
-margin-bottom:12px;
 
 }
 
@@ -285,6 +282,15 @@ text-decoration:underline;
 
 .footer-contact{
 margin-top:20px;
+}
+.footer__logo img{
+
+height:50px;
+width:auto;
+display:block;
+
+border-radius:8px;
+
 }
 
 
