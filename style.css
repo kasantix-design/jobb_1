@@ -257,3 +257,74 @@ img {
     font-weight: bold;
     margin-top: 10px;
 }
+
+/* ===========================
+   FRETEX HEADER (identisk stil)
+=========================== */
+
+.topheader {
+    background-color: #ffffff;
+    border-bottom: 2px solid #E4002B;
+    padding: 10px 0;
+}
+
+.topheader__container {
+    width: min(1200px, 90%);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topheader__logo img {
+    height: 50px;
+}
+
+/* Menu */
+.topheader__menu {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.topheader__menu a {
+    color: #1D1D1B;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.topheader__menu a:hover {
+    color: #E4002B;
+}
+
+/* Highlighted button (Tiltakene) */
+.topheader__highlight a {
+    padding: 8px 14px;
+    background-color: #E4002B;
+    color: white !important;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: opacity .2s ease;
+}
+
+.topheader__highlight a:hover {
+    opacity: .85;
+}
+
+/* Mobile – simple collapse (not full burger yet) */
+@media (max-width: 700px) {
+    .topheader__menu {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        background: #ffffff;
+        border-top: 2px solid #E4002B;
+    }
+
+    .topheader__container {
+        flex-direction: column;
+    }
+}
+
