@@ -1,81 +1,76 @@
 <!DOCTYPE html>
 <html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiltakene | Fretex</title>
 
-    <!-- CSS -->
-    css/style.css
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiltakene | Fretex</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- NAV -->
-    <div data-include="detaljer/nav.html"></div>
+<!-- NAV -->
+<div data-include="detaljer/nav.html"></div>
 
-   <!-- GRID MED RUNDE BILDER -->
+<main>
+
+<!-- GRID MED RUNDE BILDER -->
 <div class="tiltak-grid">
 
-    <!-- 1 -->
-    <a class="tiltak-item" href="ta.html">
-        <img src="bilder/13146611_Office employees working at ergonomic workplaces.jpg" alt="Tilrettelagt arbeid">
-        <h3>Tilrettelagt arbeid</h3>
-    </a>
+<a class="tiltak-item" href="ta.html">
+<img src="bilder/13146611_Office employees working at ergonomic workplaces.jpg" alt="Tilrettelagt arbeid">
+<h3>Tilrettelagt arbeid</h3>
+</a>
 
-    <!-- 2 -->
-    <a class="tiltak-item" href="ips.html">
-        <img src="bilder/144642432_10141569_copy.png" alt="IPS">
-        <h3>Individuell jobbstøtte (IPS)</h3>
-    </a>
+<a class="tiltak-item" href="ips.html">
+<img src="bilder/144642432_10141569_copy.png" alt="IPS">
+<h3>Individuell jobbstøtte (IPS)</h3>
+</a>
 
-    <!-- 3 -->
-    <a class="tiltak-item" href="vta.html">
-        <img src="bilder/21683544_Company boss giving tasks to upset employee who very busy_copy.png" alt="VTA">
-        <h3>Varig tilrettelagt arbeid (VTA)</h3>
-    </a>
+<a class="tiltak-item" href="vta.html">
+<img src="bilder/21683544_Company boss giving tasks to upset employee who very busy_copy.png" alt="VTA">
+<h3>Varig tilrettelagt arbeid (VTA)</h3>
+</a>
 
-    <!-- 4 -->
-    <a class="tiltak-item" href="oppfolging.html">
-        <img src="bilder/6869930_29089_cowork.jpg" alt="Oppfølging">
-        <h3>Oppfølgingstiltaket</h3>
-    </a>
+<a class="tiltak-item" href="oppfolging.html">
+<img src="bilder/6869930_29089_cowork.jpg" alt="Oppfølging">
+<h3>Oppfølgingstiltaket</h3>
+</a>
 
-    <!-- 5 -->
-    <a class="tiltak-item" href="avklaring.html">
-        <img src="bilder/6869930_29089_girl.png" alt="Avklaring">
-        <h3>Avklaringstiltaket</h3>
-    </a>
+<a class="tiltak-item" href="avklaring.html">
+<img src="bilder/6869930_29089_girl.png" alt="Avklaring">
+<h3>Avklaringstiltaket</h3>
+</a>
 
-    <!-- 6 -->
-    <a class="tiltak-item" href="aft.html">
-        <img src="bilder/6869930_29089_sacco.jpg" alt="AFT">
-        <h3>Arbeidsforberedende trening (AFT)</h3>
-    </a>
+<a class="tiltak-item" href="aft.html">
+<img src="bilder/6869930_29089_sacco.jpg" alt="AFT">
+<h3>Arbeidsforberedende trening (AFT)</h3>
+</a>
 
-    <!-- 7 -->
-    <a class="tiltak-item" href="arr.html">
-        <img src="bilder/6869930_29089_working .png" alt="ARR">
-        <h3>Arbeidsrettet rehabilitering (ARR)</h3>
-    </a>
+<a class="tiltak-item" href="arr.html">
+<img src="bilder/6869930_29089_working .png" alt="ARR">
+<h3>Arbeidsrettet rehabilitering (ARR)</h3>
+</a>
 
 </div>
-        </div>
-    </main>
 
-    <!-- FOOTER -->
-    <div data-include="detaljer/footer.html"></div>
+</main>
 
-    <!-- Include loader script (same as index) -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll("[data-include]").forEach(async el => {
-                const file = el.getAttribute("data-include");
-                const res = await fetch(file);
-                el.innerHTML = await res.text();
-            });
-        });
-    </script>
+<!-- FOOTER -->
+<div data-include="detaljer/footer.html"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+document.querySelectorAll("[data-include]").forEach(async el => {
+const file = el.getAttribute("data-include");
+const res = await fetch(file);
+el.innerHTML = await res.text();
+});
+});
+</script>
 
 </body>
 </html>
