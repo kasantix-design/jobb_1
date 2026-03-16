@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiltakene | Fretex</title>
+
+    <!-- CSS -->
+    css/style.css
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div data-include="detaljer/nav.html"></div>
+
+    <main id="main">
+        <div class="container">
+
+            <h1 class="article__heading" style="text-align:center; margin-bottom:40px;">
+                Tiltakene
+            </h1>
+
+            <p style="text-align:center; max-width:700px; margin:0 auto 40px; opacity:.8;">
+                Her finner du alle tiltakene våre. Klikk på et tiltak for å lese mer.
+            </p>
+
+            <!-- GRID MED RUNDE BILDER -->
+            <div class="tiltak-grid">
+
+                <!-- 1 -->
+                <a class="tiltak-item" href="ta.html">
+                    <img src="bilder/ta-illustrasjon.webp" alt="Tilrettelagt arbeid">
+                    <h3>Tilrettelagt arbeid</h3>
+                </a>
+
+                <!-- 2 -->
+                <a class="tiltak-item" href="ips.html">
+                    <img src="bilder/ips.webp" alt="IPS">
+                    <h3>Individuell jobbstøtte (IPS)</h3>
+                </a>
+
+                <!-- 3 -->
+                <a class="tiltak-item" href="vta.html">
+                    <img src="bilder/vta.webp" alt="VTA">
+                    <h3>Varig tilrettelagt arbeid (VTA)</h3>
+                </a>
+
+                <!-- 4 -->
+                <a class="tiltak-item" href="oppfolging.html">
+                    <img src="bilder/oppfolging.webp" alt="Oppfølging">
+                    <h3>Oppfølgingstiltaket</h3>
+                </a>
+
+                <!-- 5 -->
+                <a class="tiltak-item" href="avklaring.html">
+                    <img src="bilder/avklaring.webp" alt="Avklaring">
+                    <h3>Avklaringstiltaket</h3>
+                </a>
+
+                <!-- 6 -->
+                <a class="tiltak-item" href="aft.html">
+                    <img src="bilder/aft.webp" alt="AFT">
+                    <h3>Arbeidsforberedende trening (AFT)</h3>
+                </a>
+
+                <!-- 7 -->
+                <a class="tiltak-item" href="arr.html">
+                    <img src="bilder/arr.webp" alt="ARR">
+                    <h3>Arbeidsrettet rehabilitering (ARR)</h3>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div data-include="detaljer/footer.html"></div>
+
+    <!-- Include loader script (same as index) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll("[data-include]").forEach(async el => {
+                const file = el.getAttribute("data-include");
+                const res = await fetch(file);
+                el.innerHTML = await res.text();
+            });
+        });
+    </script>
+
+</body>
+</html>
