@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tilrettelagt arbeid (TA) – Fretex bistår deg med å finne din vei inn i arbeidslivet eller utdanning.">
+    <meta name="robots" content="index, follow">
+    <title>Tilrettelagt arbeid | Fretex</title>
+
+    <script>
+        // Loader for nav + footer
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll("[data-include]")
+                .forEach(async (el) => {
+                    const file = el.getAttribute("data-include");
+                    const response = await fetch(file);
+                    el.innerHTML = await response.text();
+                });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Plassholder for navigasjon -->
+    <div data-include="detaljer/nav.html"></div>
+
+    <main>
+        <h1>Tilrettelagt arbeid</h1>
+        <p>Her kommer sidens innhold.…</p>
+    </main>
+
+    <!-- Plassholder for footer -->
+    <div data-include="detaljer/footer.html"></div>
+
+</body>
+</html>
