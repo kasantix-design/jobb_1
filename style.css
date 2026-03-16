@@ -318,10 +318,11 @@ gap:15px;
 padding:20px;
 border-top:2px solid #E4002B;
 }
- .topheader__logo img{
+.topheader__logo img{
 height:50px;
 width:auto;
-}  
+display:block;
+} 
 
 .topheader__container{
 flex-direction:column;
