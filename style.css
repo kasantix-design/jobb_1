@@ -382,42 +382,32 @@ text-align:center;
 =========================== */
 
 .topheader {
-    background-color: #ffffff;
-    border-bottom: 2px solid #E4002B;
-    padding: 10px 0;
+    background:#fff;
+    border-bottom:3px solid #E4002B;
 }
 
-.topheader__container {
-    width: min(1200px, 90%);
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.topheader__logo img {
-    height: 50px;
-}
-
-/* Menu */
 .topheader__menu {
-    list-style: none;
-    display: flex;
-    gap: 35px;
-    align-items: center;
+    list-style:none;
+    display:flex;
+    gap:32px;
 }
 
 .topheader__menu a {
-    color: #1D1D1B;
-    font-weight: 600;
-    font-size: 1rem;
-    text-decoration: none;
+    text-decoration:none;
+    color:#1D1D1B;
+    font-weight:600;
 }
 
 .topheader__menu a:hover {
-    color: #E4002B;
+    color:#E4002B;
 }
 
+.topheader__highlight a{
+    background:#E4002B;
+    color:white;
+    padding:8px 14px;
+    border-radius:4px;
+}
 /* Highlighted button (Tiltakene) */
 .topheader__highlight a {
     padding: 8px 14px;
